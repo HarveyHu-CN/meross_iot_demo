@@ -1,0 +1,4 @@
+- interface.go描述redis的统一对外接口
+- adaptorRedigo.go包装redigo接口，满足interface.go的接口
+- utils.go是从redigo复制的helper函数
+- 单元测试使用testify，除个别测试使用了miniredis，其他单元测试都需要提供本地redis服务，127.0.0.1:6379

@@ -1,0 +1,29 @@
+[mainDb]
+user = 'root'
+password = 'meross'
+protocol = 'tcp'
+address = '127.0.0.1'
+port = 3306
+dbName = 'meross'
+timeout = '3s'
+readTimeout = '3s'
+writeTimeout = '3s'
+connMaxLife = '43200s'
+maxIdleConns = 4
+maxOpenConns = 5
+
+[mainCache]
+driver = "redigo"
+host = "127.0.0.1"
+port = 6379
+password = ""
+database = 0
+timeout = "3s"
+readTimeout = "3s"
+writeTimeout = "3s"
+keepalive = "2m"
+maxIdleConns = 4
+maxActiveConns = 5
+idleTimeout = "3h"
+connMaxLife = "12h"
+pingOnBorrow = "2m"
